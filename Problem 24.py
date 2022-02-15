@@ -12,11 +12,8 @@ for i in range(278134569, 278965431):
         fact_two_count += 1
 
     if fact_two_count == (10**6):
-        print(i, 'X')
-        break
-
-    print(i)
-    
+        print(i)
+        break    
 
 print(time.process_time() - start, 'sec')
 
