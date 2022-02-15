@@ -5,9 +5,9 @@ def perm(x):
 import time
 start = time.process_time()
 
-fact_two_count = 997920
+fact_two_count = 999996
 
-for i in range(278134569, 278965431):
+for i in range(2783915046, 2783915640):
     if perm(i):
         fact_two_count += 1
 
@@ -17,4 +17,4 @@ for i in range(278134569, 278965431):
 
 print(time.process_time() - start, 'sec')
 
-#Mathematically deduced the first three digits to be 278
+#Mathematically deduced the first seven digits to be 2783915
