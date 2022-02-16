@@ -3,22 +3,22 @@ import math
 import time
 start = time.process_time()
 
-tri = []
 pent = []
+hect = []
+mix = 143
+last = 50000
 
-for n in range(286, 600):
-    tri.append(int((n**2+n)/2))
+for i in range(166, last):
+    p = int((3*i*i - i)/2)
+    pent.append(p)
 
-for n in range(165, 600-286):
-    pent.append(int(((3*n)**2-n)/2))
+    h = int(2*mix*mix - mix)
+    mix += 1
+    hect.append(h)
 
-n = 144
-
-while True:
-    if (2*(n**2) - 1) in tri and (2*(n**2) - 1) in pent:
-        print(2*(n**2) - 1)
+for i in pent:
+    if i in hect:
+        print(i)
         break
-
-    n+=1
 
 print(time.process_time() - start, 'sec')
